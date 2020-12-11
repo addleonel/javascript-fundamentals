@@ -1,0 +1,24 @@
+{
+	"username": "RASTGOOD73",
+	"level": 45,
+	"charecters":[
+		{"level":2,
+		"name": "kassadin",
+		"ability":["teleport", "magic"],
+		"type":"mago"},
+		{"level":5,
+		"name": "Vel'koz",
+		"ability":["teleport", "magic"],
+		"type":"mago"},
+		{"level":4,
+		"name": "Zack",
+		"ability":["teleport", "magic"],
+		"type":"mago"},
+		{"level":2,
+		"name": "kassadin",
+		"ability":["teleport", "magic"],
+		"type":"mago"}
+	],
+	"blueEsencial": 4630,
+	"orangeEsencial": 2034	
+}
