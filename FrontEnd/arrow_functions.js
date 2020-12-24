@@ -1,5 +1,28 @@
 // Arrow functions
+// Arrow functions were introduced in ES6
+// Arrow function allow us to write shorter function syntax:
 
+// Without arrow syntax
+const message = function(){
+	return "TENET";
+}
+console.log(message());
+
+const messageWithParameter = function(message){
+	return message;
+}
+console.log(messageWithParameter("I've already seen TENET."));
+
+
+//With arrow syntax
+const message2 = () => "TENET";
+console.log(message2());
+
+const messageWithParameter2 = (message) => message + ".";
+console.log(messageWithParameter2("I've already seen TENET"))
+
+
+// Returns with arrow function
 const square = (x => x*x);
 console.log(square(12));  // output 144
 
