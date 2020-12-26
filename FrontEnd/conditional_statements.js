@@ -45,3 +45,12 @@ switch (lecture){
 }
 console.log(send);
 
+// Using conditional (ternary) operator
+function apply(age){
+	return age >= 18 ? "You can do it": "You can't do it";
+}
+console.log(apply(17));
+
+const admission = (score) => score >= 200 ? "Admitted":"No admitted";
+console.log(admission(100));
+
