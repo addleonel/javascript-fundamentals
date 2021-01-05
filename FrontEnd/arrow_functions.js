@@ -34,3 +34,30 @@ console.log(sqrtPlusOne(20));  // output: 401
 
 const isInteger = x => Number.isInteger(x) && x > 30;
 console.log(isInteger(34));  // output: true
+
+
+// Using higher order arrow function
+// Using map function
+const squareNumber = (arr) =>{
+	const numbers = arr.map(x => x*x)
+	return numbers;
+}
+
+console.log(squareNumber([4, 6, 7, 2, 5]));
+
+// Using filter function
+const evenNumbers = (arr) =>{
+	const numbers = arr.filter(x => x%2===0);
+	return numbers; 
+}
+
+console.log(evenNumbers([3, 5, 2, 6, 1, 8]));
+
+// Using filter and map functions
+
+const oddSquareNumbers = (arr) =>{
+	const numbers = arr.filter(x => x%2 !==0 && x > 2).map(x => x*x);
+	return numbers;
+}
+
+console.log(oddSquareNumbers([1, 3, 4, 2, 7, 11]));
