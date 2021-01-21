@@ -23,3 +23,5 @@ console.log(message.lastIndexOf("s", 5));  // 3, return -1 if there isn't
 // Search a string for a specified value and return the first occurrences
 console.log(message.search("simple"));  // 10, return -1 if there isn't
 
+// slice(strat, end) extracts a part of a string and returns the extracted part in a new string.
+console.log(message.slice(5, 17));  // return "is a simple"
