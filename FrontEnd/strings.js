@@ -19,13 +19,17 @@ let string_object = new String("2 + 2");
 
 console.log(eval(string_primitive));  // 4
 console.log(eval(string_object));  // [string: '2 + 2']
+// valueOf() method return the primitive value of a String object
 console.log(eval(string_object.valueOf())); // 4
 
 // Length of a string
 console.log(message.length);  // 24
 
+// Get a char with charAt() method
+console.log(message.charAt(3));  // s
+
 // Get a char with index
-console.log(message[3]);
+console.log(message[3]);  // s
 
 // The search() method cannot take a second start position argument.
 // The indexOf() method cannot take powerful search values (regular expressions).
@@ -50,4 +54,12 @@ console.log(message.slice(5, 17));  // return "is a simple"
 
 // split() method, divides a string into an ordered list of substrings
 console.log(message.split(" ")); // ["This", "is", "a", "simple", "message"]
-console.log(message.split(" ", 2)); // ["This", "is"]
+console.log(message.split(" ", 2)); // ["This", "is"l
+
+// trim() method, removes whitespace from both ends of a string
+console.log(message.trim());  // This is a simple message 
+
+// replace(), method returns a new string with some or all matches of a pattern replaced
+console.log(message.replace("simple", "complex"));  // This is a complex message
+
+
