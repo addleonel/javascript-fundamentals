@@ -63,3 +63,8 @@ console.log(message.trim());  // This is a simple message
 console.log(message.replace("simple", "complex"));  // This is a complex message
 
 
+// toLowerCase() method
+console.log(message.toLowerCase());  // this is a simple message
+
+// toUpperCase() method
+console.log(message.toUpperCase());  // THIS IS A COMPLEX MESSAGE
