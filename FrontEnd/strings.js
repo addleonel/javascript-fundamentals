@@ -59,6 +59,12 @@ console.log(message.split(" ", 2)); // ["This", "is"l
 // trim() method, removes whitespace from both ends of a string
 console.log(message.trim());  // This is a simple message 
 
+// trimEnd() method, method removes whitespace from the end of a strin
+console.log("trimEnd :", message.trimEnd());
+
+// trimStart() method, method removes whitespace from the beginning of a string.
+console.log("trimStart: ", message.trimStart());
+
 // replace(), method returns a new string with some or all matches of a pattern replaced
 console.log(message.replace("simple", "complex"));  // This is a complex message
 
