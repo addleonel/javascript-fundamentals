@@ -68,9 +68,11 @@ console.log("trimStart: ", message.trimStart());
 // replace(), method returns a new string with some or all matches of a pattern replaced
 console.log(message.replace("simple", "complex"));  // This is a complex message
 
-
 // toLowerCase() method
 console.log(message.toLowerCase());  // this is a simple message
 
 // toUpperCase() method
 console.log(message.toUpperCase());  // THIS IS A COMPLEX MESSAGE
+
+// repeat(count) method
+console.log(message.repeat(5));  // repeat the message 5 times 
