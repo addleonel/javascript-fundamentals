@@ -75,4 +75,7 @@ console.log(message.toLowerCase());  // this is a simple message
 console.log(message.toUpperCase());  // THIS IS A COMPLEX MESSAGE
 
 // repeat(count) method
-console.log(message.repeat(5));  // repeat the message 5 times 
+console.log(message.repeat(5));  // repeat the message 5 times
+
+// startsWith() method
+console.log(message.startsWith("T"));  // true 
