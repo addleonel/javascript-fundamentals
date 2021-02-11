@@ -6,6 +6,12 @@
 //  unshift() to add  |   push() to add
 //  shift() to remove |   pop() to remove
 
+// Create an array
+let fruits = ['Apple', 'Banana']
+
+console.log(fruits.length)
+
+
 // EXAMPLE WITH ARRAY
 
 // EXAMPLE 1
