@@ -1,6 +1,9 @@
+// DATA TYPES 
+// More info: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
 
 // PRIMITIVE DATA
-// string, number, boolean, and undefined
+// string, number, boolean, bigint, symbol, and undefined
+
 
 // STRINGS
 let firstString = "Hi eveyone!";  // With double quotes
@@ -17,19 +20,33 @@ let secondNumber = 23.43;  // With decimal
 let largeNumber = 349e5;  // 34900000 with scientific notation
 let smallerNumber = 349e-5;  // 0.00349 With scientific notation  
 
+
 // BOOLEANS
 let isMale = true;
 let isDeveloper = false;
 console.log(isMale && isDeveloper);  // Output false
 console.log(isMale || isDeveloper);  // Output true
 
+
+// BIGINT
+let myBigInt = 377467673673673467n;
+console.log(myBigInt);
+
+
+// SYMBOL
+let sym1 = Symbol("foo");
+console.log(sym1);
+
+
 // UNDEFINED
 let myvariable;  // Value is undefined, type is undefined
 myvariable = undefined;  // Value is undefined, type is undefined
 console.log(typeof myvariable);  //Output undefined
 
-// COMPLEX DATA
+
+// COMPLEX DATA OR STRUCTURAL TYPES 
 // function, object
+
 
 // FUNCTION
 function myfunc(){
@@ -48,11 +65,10 @@ let mydata = {
 }
 console.log(typeof mydata);  // Output object
 
-// null is also a object
+// null is also an object in javascript but is considered a primitive type. 
 let nullValue = null;
 console.log(typeof nullValue);
 
 // arrays are also objects
 let myarray = [23, 2, 71, 73];
-console.log(typeof myarray);  // Output object
-
+console.log(typeof myarray);  // Output object 
