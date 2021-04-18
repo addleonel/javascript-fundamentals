@@ -22,27 +22,30 @@ for(let i=0; i<13; i++){
 	console.log(i+"*"+5+"=",i*5);
 }
 
-// for/on
+// for/of
 // lets you loop over data structures that are iterable such as 
 // Arrays, Strings, Maps, NodeLists, and more
+console.log("For/of")
 let items = [2, 3, 4, 5, 6];
 let sum = 0;
-for (x of items){
-	sum += x;
+for (const item of items){
+	sum += item;
 }
 console.log(sum);
 
 // for/in
 // Loops through the properties of an object:
+console.log("For/in");
 let person = {name:"Jhon", age:23};
 let message = "";
-for (x in person){
+for (const x in person){
 	message += person[x];
 }
 console.log(message);
 
 
 // Example 1 
+console.log("Example 1: Multiply Table");
 const multiplyTable = (toThis) =>{
 	let allTable = [];
 	let subTable = [];
@@ -58,6 +61,7 @@ const multiplyTable = (toThis) =>{
 console.log(multiplyTable(13));
 
 // Example 2
+console.log("Example 2: Multiply Matrix");
 const multiplyMatrix = (m1, m2) =>{
 	let result = [];
 	let subValue = [];
