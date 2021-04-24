@@ -41,3 +41,11 @@ console.log(`myArray=${myArray}, myArray2=${myArray2}, concatenatedArray=${conca
 // .slice(<from>, <to>)
 let slicedArray = myArray.slice(3, 6);
 console.log(`slicedArray=${slicedArray}, myArray=${myArray}`);
+
+// sorted method: Sorts an array alphabetically
+myArray.sort();
+console.log(`myArray=${myArray}`);
+
+// reveres method: reverses the items in an array
+myArray.reverse();
+console.log(`myArray=${myArray}`);
