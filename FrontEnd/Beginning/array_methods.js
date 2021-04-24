@@ -45,7 +45,10 @@ console.log(`slicedArray=${slicedArray}, myArray=${myArray}`);
 // sorted method: Sorts an array alphabetically
 myArray.sort();
 console.log(`myArray=${myArray}`);
+// using compare function
+myArray.sort((a, b)=> a-b);  // sorts an array numerically
+console.log(`myArray=${myArray}`);
 
-// reveres method: reverses the items in an array
+// reverse method: reverses the items in an array
 myArray.reverse();
 console.log(`myArray=${myArray}`);
