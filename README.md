@@ -19,3 +19,17 @@ Example:
 False - 5  // -5 number
 ```
 
+### Dynamic Typing
+
+Run directly in the Runtime stage without a previous compilation stage. This allows you to try our code immediately, But it is also what makes errors show until the program is executed.
+
+Example;
+
+```javascript
+var name = "Leonel";
+name = 22;
+```
+
+### JavaScript is Backwards Compatible
+
+All new functions that depart from JavaScript will not damage the work already done, but can not be used in our work environment immediately. To solve this is Babel that allows us to use the new language features and transforms them into a version that the browser can understand.
