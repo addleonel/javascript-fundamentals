@@ -33,3 +33,12 @@ name = 22;
 ### JavaScript is Backwards Compatible
 
 All new functions that depart from JavaScript will not damage the work already done, but can not be used in our work environment immediately. To solve this is Babel that allows us to use the new language features and transforms them into a version that the browser can understand.
+
+### Variables
+
+```javascript
+let myVariable;  // declaring the variable
+myVariable = “Hello”  // Initializing the variable
+let myName = “Leonel”  // Declaring and Initializing the variable
+```
+
