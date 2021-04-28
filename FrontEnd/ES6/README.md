@@ -6,5 +6,5 @@ The Sixth Edition, initially known as ECMAScript 6 (ES6) and later renamed to EC
 
 In other words, ES6 is a superset of JavaScript (ES5). The reason that ES6 became so popular is that it introduced new conventions and OOP concepts such as classes.
 
-<img src="https://miro.medium.com/max/1534/1*7RxGAl4LXmd8jNy86yi5kg.png" width="300px" height="200px">
+<img src="https://miro.medium.com/max/1534/1*7RxGAl4LXmd8jNy86yi5kg.png" width="500px" height="400px">
 
