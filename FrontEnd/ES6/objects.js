@@ -59,7 +59,7 @@ let student = {
 
 let newStudent = Object.assign({}, person, student, {name: "Albert"});
 
-let newPerson = objects.assign({name: "Tim"}, person);
+let newPerson = Object.assign({name: "Tim"}, person);
 
 console.log(newStudent);
 console.log(newPerson);
