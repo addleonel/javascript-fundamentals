@@ -26,9 +26,16 @@ function sum(a, b, c){
 	return a + b + c;
 }
 
+const multiply = (a, b, c, n) =>{
+	return (a + b + c)*n;
+}
+
 let inputNumbers = [34, 12, 34];
 
 console.log(sum(...inputNumbers));  // 80
+
+console.log(multiply(...inputNumbers, 2));  // 160
+
 
 // Clone array
 let originalArrayA = [1, 2, 3, 4, 5];
