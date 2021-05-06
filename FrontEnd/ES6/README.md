@@ -8,3 +8,6 @@ In other words, ES6 is a superset of JavaScript (ES5). The reason that ES6 becam
 
 <img src="https://miro.medium.com/max/1534/1*7RxGAl4LXmd8jNy86yi5kg.png" width="700px" height="400px">
 
+### JavaScript let
+
+The let keyword allows you to declare a variable with block scope.
