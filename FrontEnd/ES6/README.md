@@ -1,4 +1,4 @@
-## ECMAScript 6
+## ECMAScript 6 (ES6)
 
 ECMAScript (ES) is a scripting language specification created to standardize JavaScript.
 
