@@ -6,9 +6,16 @@
  * Classes are in fact "special functions", and just as you can define
  * function expressions and function declarations, the class syntax has 
  * two components: class expressions and class declarations.
- * */
+ *
+ */
 
-// Class Expression
+
+// Class Daclaration
+// An important difference between function declarations and class declarations
+// is that function declarations are hoisted and class declarations are not. 
+// You first need to declare your class and then access it, 
+// otherwise code like the following will throw a ReferenceError:
+
 
 class Vector{
     constructor(x, y){
@@ -22,3 +29,30 @@ vector1 = new Vector(2, 3);
 console.log(vector1, typeof vector1);  // vector {x:2, y:3} object
 console.log(vector1.x);  // 2
 console.log(vector1.y);  // 3
+
+// class Expresion
+
+// Class expressions are subject to the same hoisting restrictions
+// as described in the Class declarations section.
+
+// named
+let Rectangle = class {
+    constructor(width, height){
+	this.width = width;
+	this.height = height;
+    }
+}
+
+console.log(Rectangle.name);  // Rectangle
+
+// unnamed
+let OtherRectangle = class Rectangle2 {
+    constructor(width, height){
+	this.width = width;
+	this.height = height;
+    }
+}
+
+console.log(OtherRectangle.name);  // Rectangle2
+
+
