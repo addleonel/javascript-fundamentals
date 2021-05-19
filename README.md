@@ -8,7 +8,7 @@ Javascript is an interpreted language, objects oriented, weakly typed, and dynam
 The data types are not well defined in the language and allow for example operations between numbers and letters because the language assumes data types that are not necessarily the ones you want to represent.
 You can do operations between different data types (integers with Strings, Booleans with integers, etc.).
 
-<img src="https://blogs.agilefaqs.com/wp-content/uploads/2009/09/strongweakstaticdynamic_type.png" width="500px" height="300px">
+<img src="https://blogs.agilefaqs.com/wp-content/uploads/2009/09/strongweakstaticdynamic_type.png" width="440px" height="300px">
 
 Example:
 
