@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM(Document Object model)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- alert -->
+    <button id="say-hello" onclick="sayHello()">Say Hello</button>
+
+    <!-- prompt -->
+    <button id="write-message" onclick="writeMessage()">Write Message</button>
+
+    <!-- querySelectorAll -->
+    <div class="greating-message-container">
+        <p class="greating-message">hello</p>
+        <p class="greating-message">hello</p>
+        <p class="greating-message">hello</p>
+    </div>
+    <button id="change-message" onclick="changeMessage()">Change Message</button>
+    
+    <!-- getElementById -->
+    <div class="box-colored__container">
+        <div id="box-colored__item" onclick="colorize()"></div>
+    </div>
+    <!-- scripts -->
+    <script src="alert.js"></script>
+    <script src="prompt.js"></script>
+    <script src="querySelectorAll.js"></script>
+    <script src="getElementById.js"></script>
+</body>
+</html>
