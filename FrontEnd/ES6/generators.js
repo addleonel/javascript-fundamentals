@@ -18,4 +18,9 @@ for(let number of evenNumbers(5)){
 	console.log(number);
 }
 
+// or also we can get values step by step
 
+console.log("Step by step:");
+let fetn = evenNumbers(10);
+console.log(fetn.next().value);
+console.log(fetn.next().value);
