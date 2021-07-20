@@ -1,4 +1,4 @@
-## ECMAScript 6 (ES6)
+# ECMAScript 6 (ECMAScript 2015)
 
 ECMAScript (ES) is a scripting language specification created to standardize JavaScript.
 
@@ -7,3 +7,6 @@ The Sixth Edition, initially known as ECMAScript 6 (ES6) and later renamed to EC
 In other words, ES6 is a superset of JavaScript (ES5). The reason that ES6 became so popular is that it introduced new conventions and OOP concepts such as classes.
 
 <img src="https://miro.medium.com/max/1534/1*7RxGAl4LXmd8jNy86yi5kg.png" width="700px" height="400px">
+
+More details about JavaScript history [here](https://madasamy.medium.com/javascript-brief-history-and-ecmascript-es6-es7-es8-features-673973394df4).
+
