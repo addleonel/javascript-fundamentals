@@ -12,15 +12,15 @@ function* evenNumbers(number){
 		count += 1;
 	}
 }
-console.log(evenNumbers(20));
+console.log(evenNumbers(20));  // Object [Generator] {}
 
 for(let number of evenNumbers(5)){
 	console.log(number);
 }
+// above code print 5 even numbers: 2, 4, 6, 8, 10
 
 // or also we can get values step by step
-
 console.log("Step by step:");
 let fetn = evenNumbers(10);
-console.log(fetn.next().value);
-console.log(fetn.next().value);
+console.log(fetn.next().value);  // 2
+console.log(fetn.next().value);  // 4
