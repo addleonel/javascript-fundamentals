@@ -13,6 +13,4 @@ myPromise
 	.then(value => {return `${value} and again.\n`})
 	.then(value => console.log('Show value:', value))
 	.catch(err => console.log('Show', err))
-	.finally(finallyMessage => console.log('Process finished!'))
-
 	
