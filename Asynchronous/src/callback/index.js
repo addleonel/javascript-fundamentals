@@ -5,6 +5,8 @@
 */
 
 
+// EXAMPLE 1:
+
 // This is a callback
 function sum(num1, num2){
 	return num1 + num2;
@@ -16,3 +18,24 @@ function calculate(num1, num2, callback){
 }
 
 console.log(calculate(45, 23, sum));  // 68
+
+// EXAMPLE 2:
+
+// Higher-order function
+function date(callback){
+	const dateNow1 = new Date();
+	console.log("First print: ");
+	setTimeout(()=>{
+		callback(dateNow1);
+	}, 3000);
+
+	const dateNow2 = new Date();
+	console.log(`Second print: ${dateNow2}`)
+}
+
+// Callback
+function printDate(dateNow){
+	console.log("Callback print:", dateNow);
+}
+
+date(printDate);

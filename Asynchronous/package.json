@@ -4,7 +4,8 @@
   "description": "Asynchronous in javascrit",
   "main": "index.js",
   "scripts": {
-    "callback": "node src/callback/index.js"
+    "callback": "node src/callback/index.js",
+    "callback:API": "node src/callback/APICallback.js"
   },
   "keywords": [
     "async",
@@ -14,5 +15,8 @@
     "await"
   ],
   "author": "Leonel",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }
