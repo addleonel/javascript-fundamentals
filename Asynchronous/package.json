@@ -7,7 +7,9 @@
     "callback": "node src/callback/index.js",
     "callback:API": "node src/callback/APICallback.js",
     "promise": "node src/promise/index.js",
-    "promise:API": "node src/promise/APIpromise.js"
+    "promise:API": "node src/promise/APIPromise.js",
+    "asyncawait": "node src/asyncawait/index.js",
+    "asyncawait:API": "node src/asyncawait/APIAsyncAwait.js"
   },
   "keywords": [
     "async",

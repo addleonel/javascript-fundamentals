@@ -4,7 +4,7 @@
 const somethingWillHappend = () => {
 	return new Promise((resolve, reject) => {
 		(true)
-		? setTimeout(resolve('Yay!'), 3000)
+		? setTimeout(() => resolve('Yay!'), 3000)
 		: reject(new Error('Oops :('))
 	});
 }
@@ -18,7 +18,7 @@ somethingWillHappend()
 const somethingWillHappend2 = () => {
 	return new Promise((resolve, reject) => {
 		if (true) {
-			setTimeout(resolve('Starship is working!'), 2000);
+			setTimeout(() => resolve('Starship is working!'), 2000);
 		} else {
 			const error = new Error('Noo... Starship exploded');
 			reject(error);
