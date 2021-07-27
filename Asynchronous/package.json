@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "callback": "node src/callback/index.js",
-    "callback:API": "node src/callback/APICallback.js"
+    "callback:API": "node src/callback/APICallback.js",
+    "promise": "node src/promise/index.js",
+    "promise:API": "node src/promise/APIpromise.js"
   },
   "keywords": [
     "async",
