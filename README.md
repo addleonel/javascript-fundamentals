@@ -37,8 +37,9 @@ All new functions that depart from JavaScript will not damage the work already d
 ### Variables
 
 ```javascript
-let myVariable;  // declaring the variable
-myVariable = “Hello”  // Initializing the variable
-let myName = “Leonel”  // Declaring and Initializing the variable
+let myVariable;  // Declaring the variable
+myVariable = “Hello”  // Assigning a value to the variable
+
+let myName = “Leonel”  // Initializing == Declaring + assigning
 ```
 
