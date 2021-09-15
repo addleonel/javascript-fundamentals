@@ -80,18 +80,16 @@ body{
 }
 
 /* getElementById */
-.box-colored__container {
+.box-colored {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: auto;
     padding: 100px 0;
-    /* background-color: green; */
 }
 
 #box-colored__item{
-    /* background-color: red; */
     background: linear-gradient(rgba(7, 201, 250, 0.425), rgb(20, 156, 111, 0.5));
     width: 200px;
     height: 200px;

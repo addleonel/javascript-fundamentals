@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM(Document Object model)</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- get Query script asyncronously  -->
+    <script async src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script defer src="./assets/js/alert.js"></script>
+    <script defer src="./assets/js/prompt.js"></script>
+    <script defer src="./assets/js/querySelectorAll.js"></script>
+    <script defer src="./assets/js/getElementById.js"></script>
 </head>
 <body>
     <!-- alert -->
@@ -23,13 +30,25 @@
     <button id="change-message" onclick="changeMessage()">Change Message</button>
     
     <!-- getElementById -->
-    <div class="box-colored__container">
-        <div id="box-colored__item" onclick="colorize()"></div>
+    <div class="box-colored">
+        <div id="box-colored__item"></div>
     </div>
+
+    <!-- An Simple Calculator -->
+    <!-- <div class="calculator">
+        <div id="calculatorFieldId" class="calculator__field"></div>
+        <div class="calculator__buttons">
+        </div>
+    </div> -->
+
+    <!-- Weather -->
+    <button id="weatherButton" type="button">Get Weather</button>
+    <div id="weatherContentId"></div>
+
+    <button id="createUserButton" type="button">Create user</button>
+
+    <button id="updateUserButton" type="button">Update user</button>
     <!-- scripts -->
-    <script src="alert.js"></script>
-    <script src="prompt.js"></script>
-    <script src="querySelectorAll.js"></script>
-    <script src="getElementById.js"></script>
+    <script type="module" src="./index.js"></script>
 </body>
 </html>

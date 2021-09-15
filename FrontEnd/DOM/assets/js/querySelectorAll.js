@@ -30,4 +30,3 @@ function changeMessage(){
     }
     console.log(messages, messages.length);
 }
-
