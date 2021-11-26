@@ -18,16 +18,18 @@
 // otherwise code like the following will throw a ReferenceError:
 
 
-class Vector{
+class Vector {
     constructor(x, y){
-	this.x = x;
-	this.y = y;
+		this.x = x;
+		this.y = y;
     }
 }
 
 console.log(typeof Vector);  // function
-vector1 = new Vector(2, 3);
-console.log(vector1, typeof vector1);  // vector {x:2, y:3} object
+let vector1 = new Vector(2, 3);
+console.log(vector1);  // Vector {x: 2, y: 3}
+console.log(typeof vector1);  // object
+console.log(`vector=${vector1}, type=${typeof vector1}`);  // vector {x:2, y:3} object
 console.log(vector1.x);  // 2
 console.log(vector1.y);  // 3
 
@@ -36,7 +38,7 @@ console.log(vector1.y);  // 3
 // Class expressions are subject to the same hoisting restrictions
 // as described in the Class declarations section.
 
-// named
+// unnamed
 let Rectangle = class {
     constructor(width, height){
 	this.width = width;
@@ -46,7 +48,7 @@ let Rectangle = class {
 
 console.log(Rectangle.name);  // Rectangle
 
-// unnamed
+// named
 let OtherRectangle = class Rectangle2 {
     constructor(width, height){
 	this.width = width;
@@ -61,22 +63,38 @@ console.log(OtherRectangle.name);  // Rectangle2
 
 class Circle {
 	// constructor
-	constructor(radio){
+	constructor(radio) {
 		this.radio = radio;
 		this.PI = Math.PI;
 	}
 
-	// methods
-	calculateArea(){
+	// Instance methods
+	calculateArea() {
 		return this.PI*(this.radio)**2;
 	}
-	calculatePerimeter(){
+	calculatePerimeter() {
 		return 2*this.PI*this.radio;
 	}
-	calculateDiameter(){
+	calculateDiameter() {
 		return 2*this.radio;
 	}
 	
+	// Static methods
+	static terminologies() {
+		/*
+		Static members (properties and methods) are called without instantiating their class and cannot be called through a class instance
+		*/
+		return  {
+			circumference: "The boundary of the circle is known as the circumference",
+			radius: "The line from the centre “O” of the circle to the circumference of the circle is called the radius and it is denoted by “R” or “r”", 
+			diameter: "The line that passes through the centre of the circle and touches the two points on the circumference is called the diameter and it is denoted by the symbol “D” or “d”", 
+			arc: "Arc is the part of the circumference where the largest arc is called the major arc and the smaller one is called the minor arc",
+			sector: "Sector is slice of a circle bounded by two radii and the included arc of a circle", 
+			chord: "The straight line that joins any two points on the circumference of a circle is called the chord",
+			tangent: "A line that touches the circumference of a circle at a point is called the tangent",
+			secant: "A line that cuts the circle at the two distinct points is known as the secant", 
+		}	
+	}
 }
 
 let myCircle = new Circle(4);
@@ -84,6 +102,4 @@ console.log(myCircle.radio);  // 4
 console.log(myCircle.calculateArea());  // 50.26
 console.log(myCircle.calculatePerimeter());  // 25.13
 console.log(myCircle.calculateDiameter());  // 8 
-
-
-
+console.log(Circle.terminologies()); 

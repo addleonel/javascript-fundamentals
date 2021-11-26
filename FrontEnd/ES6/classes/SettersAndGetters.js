@@ -20,7 +20,7 @@
 
 // example:
 
-class User{
+class User {
 
 	#name;
 	#age;
@@ -34,7 +34,8 @@ class User{
 		this.#city = city;
 		this.#country = country;
 	}
-
+	
+	// Setters and Getters
 	set name(value){
 		this.#name = value; 
 	} 
