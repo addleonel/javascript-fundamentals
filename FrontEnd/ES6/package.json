@@ -1,8 +1,8 @@
 {
-  "name": "frontend",
+  "name": "es6",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "ECMAScript (ES) is a scripting language specification created to standardize JavaScript.",
+  "main": "Variables.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

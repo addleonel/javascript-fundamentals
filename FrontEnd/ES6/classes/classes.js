@@ -62,8 +62,10 @@ console.log(OtherRectangle.name);  // Rectangle2
 // =============
 
 class Circle {
+	
 	// constructor
-	constructor(radio) {
+	constructor(radio, angles={angleType: 'degrees', numberOfAngles: 0, stepValue: 15}) {
+		this.angles= angles;
 		this.radio = radio;
 		this.PI = Math.PI;
 	}
@@ -95,11 +97,27 @@ class Circle {
 			secant: "A line that cuts the circle at the two distinct points is known as the secant", 
 		}	
 	}
+
+	// Generator method
+	*generateAngles() {
+		let angle = 0;
+		for (let i=0; i<this.angles.numberOfAngles; i++) {
+			yield angle;
+			if (this.angles.angleType === 'degrees') {
+				angle += this.angles.stepValue;
+			} else if ( this.angles.angleType === 'radian') {
+				angle += this.angles.stepValue * (this.PI/180);
+			} else {
+				throw new Error('Property error, There are just two types of units here: degrees and radian.')
+			}
+		}
+	}
 }
 
-let myCircle = new Circle(4);
+let myCircle = new Circle(4, {angleType: 'radian', numberOfAngles: 10, stepValue: 30});
 console.log(myCircle.radio);  // 4
 console.log(myCircle.calculateArea());  // 50.26
 console.log(myCircle.calculatePerimeter());  // 25.13
 console.log(myCircle.calculateDiameter());  // 8 
 console.log(Circle.terminologies()); 
+console.log([...myCircle.generateAngles()])
