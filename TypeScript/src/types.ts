@@ -83,6 +83,6 @@ getUserId("120");
 getUserId(132);
 
 // TUPLE 
-
+// To create an tuple is necesary create a custom type with types in an array
 type formFields = [number, string, string, boolean];
 let userFormFields: formFields = [2, 'Thomas', 'Edison', true];
