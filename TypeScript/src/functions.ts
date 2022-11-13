@@ -18,3 +18,14 @@ const sinCalculate: mathFunc = (value) => {
 }
 
 console.log(sinCalculate(90));
+
+// Using interface
+interface SumNumbers {
+    (number1: number, number2: number): string;
+}
+
+const addNumbers: SumNumbers = (a, b) => {
+    return `Result = ${a + b}`;
+}
+
+console.log(addNumbers(1, 8));

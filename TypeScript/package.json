@@ -4,6 +4,8 @@
   "description": "Typescript basics",
   "main": "index.js",
   "scripts": {
+    "functions": "ts-node src/functions.ts",
+    "generics": "ts-node src/generics.ts",
     "calculator": "ts-node src/calculator.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
